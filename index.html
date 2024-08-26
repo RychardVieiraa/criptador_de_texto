@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assents/icon.png">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="/assents/Logo.png">
+    </header>
+    <main>
+        <section class="mensaje">
+            <textarea class="mensaje__campo__texto"placeholder=" Digite seu texto"></textarea>
+            <div class="informacion">
+                <img class="informacion__icono" src="/assents/bi_exclamation-circle-fill.png" alt="informacion"><p class="mensaje__informacion"> Somente letra minúsculas e sem acentos. </p>
+            </div>
+            <div class="botones">
+                <button type="button" class="botones__encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button type="button" class="botones__desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <div id="resultado__campo__vacio" class="resultado__campo__vacio">
+                <img class="resultado__campo__vacio__muñeco" src="/assents/muneco.png" alt="Imagem de uma boneca com uma lupa">
+                <p class="resultado__campo__vacio__destaque">Nenhuma mensagem encontrada</p>
+                <p class="resultado__campo__vacio__regular">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="resultado__campo__texto" class="resultado__campo__texto" style="display: none;">
+                <textarea class="resultado__campo__texto__encriptado" readonly="true"></textarea>
+                <button type="button" class="botones__copiar" onclick="copiarMensaje()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Criptografia de Texto. Todos os direitos reservados a <i>Rychard Vieira</i>.</p>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+</html>
